@@ -2,6 +2,10 @@
 <p> the passing is {{Text}}</p>
 
     {{# each item }}
+      var str = this.url;
+      var str1 = "https://embed"; 
+      str = str.slice(11);
+      str1.concate(str);
         <ul>
 
 
@@ -14,8 +18,8 @@
             <li> {{this.date}} <br/></li>
             <li> {{this.tags}} <br/></li>
             <li>{{this.url}}</li><br/>
-            <li>https://embed.ted.com/talks/ken_robinson_says_schools_kill_creativity</li>
-            <iframe width="420" height="315" src="https://embed.ted.com/talks/edward_burtynsky_on_manufactured_landscapes"></iframe>
+            //<li>https://embed.ted.com/talks/ken_robinson_says_schools_kill_creativity</li>
+            <iframe width="420" height="315" src="{{str1}}"></iframe>
         </ul>><br/>
             <li> {{this.views}} <br/></li>
             <li> {{this.related_talks}} <br/></li>
