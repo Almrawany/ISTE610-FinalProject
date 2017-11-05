@@ -3,11 +3,17 @@
 
     {{# each item }}
         <ul>
-            <li>text {{this.text}}</li>
+
+            <li><a href="/Document/{{this._id}}">{{this.title}}</a> <br/> {{this.description}} {{this.main_speaker}}</li>
         </ul>
     {{/each}}
+
+
 <div>
 <form action="/return" method="get">
     <button type="back">back</button>
 </form>
 </div>
+
+
+<a href="/dashboard?id=ANDROID" id="ANDROID">ANDROID</a>
