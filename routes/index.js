@@ -31,7 +31,7 @@ router.get('/test/submit', function (req, res, next) {
             if (err) reject(err);
             //--------------------------------------
 
-            var array = db.collection('Ted').find({title: { $regex: ".*" + text + ".*", $options: "i" } }).toArray();
+            var array = db.collection('Ted').find({title: { $regex: ".*" + text + ".*", $options: "i" } }).limit(10).toArray();
 
             //var array = db.collection('Ted').find({title: "/.*/b" + text + ".*/i" }).toArray();
             console.log(array);
@@ -78,6 +78,39 @@ router.get('/return', function(req, res, next)
     }
 
 );
+
+
+// Here I have made a router that takes the comment from the user and it will update the field depend on the _id
+//attribute that has been inetialize by the mongoDB.
+router.post('/add/comment',function(req, res, next) {
+
+    var id2 = req.body.id; // this id has been taken from a hidden input in the Document page.
+    var usercomment2 = req.body.usercomment;// this is the comment that the user inialize.
+
+
+    mongo.connect(url, function (err, db) {
+        return new Promise(function (resolve, reject) {
+            if (err) reject(err);
+            //--------------------------------------
+            // this update is using ($addToSet) to make attribute comment an array.
+            var array = db.collection('Ted').updateOne({_id: new ObjectID(id2)}, {$addToSet: {comment2: usercomment2}});
+            console.log(array);
+            db.close();
+            resolve(array);
+            //--------------------------------------
+        }).then(function (arr) {
+            //--------------------------------------
+            res.redirect('/Document/'+id2); // after updating the comment attribute, this line will redirect the user
+            // to the router that requery.
+            //--------------------------------------
+        });
+
+    });
+
+
+});
+
+
 
 
 module.exports = router;

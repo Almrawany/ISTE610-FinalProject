@@ -1,40 +1,52 @@
 <h1>Document</h1>
 <p> the passing is {{Text}}</p>
-
-    {{# each item }}
-      var str = this.url;
+var id ;
+{{# each item }}
+        {{this._id}}
+      var str = {{this.url}};
       var str1 = "https://embed"; 
       str = str.slice(11);
       str1.concate(str);
+
         <ul>
-
-
-            <li> {{this.title}} <br/></li>
-            <li>{{this.description}}<br/></li>
-            <li>{{this.event}} <br/></li>
-            <li>{{this.languages}} <br/></li>
-            <li>{{this.main_speaker}} <br/></li>
+            <li> {{this.title}}</li><br/>
+            <li>{{this.description}}</li><br/>
+            <li>{{this.event}} </li><br/>
+            <li>{{this.languages}} </li><br/>
+            <li>{{this.main_speaker}} </li><br/>
             <li> {{this.num_speaker}} <br/> main speaker </li>
-            <li> {{this.date}} <br/></li>
-            <li> {{this.tags}} <br/></li>
+            <li> {{this.date}} </li><br/>
+            <li> {{this.tags}} </li><br/>
             <li>{{this.url}}</li><br/>
-            //<li>https://embed.ted.com/talks/ken_robinson_says_schools_kill_creativity</li>
             <iframe width="420" height="315" src="{{str1}}"></iframe>
-        </ul>><br/>
+            </ul>><br/>
             <li> {{this.views}} <br/></li>
             <li> {{this.related_talks}} <br/></li>
 
+            <h2>Comment</h2>
+                    {{#each this.comment2}}
+                            </br>
+                            {{this}}
+                    {{/each}}
         </ul>
-    {{/each}}
+    <br/>
+        <br/>
+        <br/>
+    <form action="/add/comment" method="post">
+        <input type="hidden" name="id" value= {{this._id}}>
+        </input>
+        <textarea rows="4" cols="50" name="usercomment">
+        </textarea>
+        <br/>
+    <button type="submit">add Comment</button>
+    </form>
 
 
+    <div>
+        <form action="/return" method="get">
+        <button type="back">back</button>
+        </form>
+    </div>
 
-
-<div>
-<form action="/return" method="get">
-    <button type="back">back</button>
-</form>
-</div>
-
-
+{{/each}}
 
