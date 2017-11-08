@@ -60,6 +60,7 @@ router.get('/Document/:id', function(req, res, next)
                 //--------------------------------------
                 var array = db.collection('Ted').find({_id: new ObjectID( id2)}).limit(10).toArray();
                 console.log(array);
+
                 db.close();
                 resolve(array);
                 //--------------------------------------
@@ -94,7 +95,7 @@ router.post('/add/comment',function(req, res, next) {
             //--------------------------------------
             // this update is using ($addToSet) to make attribute comment an array.
             var array = db.collection('Ted').updateOne({_id: new ObjectID(id2)}, {$addToSet: {comment2: usercomment2}});
-            console.log(array);
+            //console.log(array);
             db.close();
             resolve(array);
             //--------------------------------------

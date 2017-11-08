@@ -1,7 +1,16 @@
 <h1>the result of the Monogo</h1>
-<p> the passing is {{Text}}</p>
+<p> The search key is</p>
+</br> <h1>{{Text}}</h1>
+
 
     {{# each item }}
+
+        {{#if item =null}}
+
+            <P>there is no result</P>
+
+        {{/if}}
+            {{escape}}
         <ul>
 
             <li><a href="/Document/{{this._id}}">{{this.title}}</a> <br/> {{this.description}} {{this.main_speaker}}</li>
@@ -9,6 +18,7 @@
     {{/each}}
 
 
+<p>there is no result</p>
 <div>
 <form action="/return" method="get">
     <button type="back">back</button>
@@ -16,4 +26,4 @@
 </div>
 
 
-<a href="/dashboard?id=ANDROID" id="ANDROID">ANDROID</a>
+
