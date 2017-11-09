@@ -24,17 +24,19 @@ router.get('/test/submit', function (req, res, next) {
 
     //Get the request
     var text = req.query.id;
+    var str = "\\b" + text + ".*" ;
+    var str1 = "\\b" + text + "\\b.*";
 
     //Connecting using MongoClient
     mongo.connect(url, function (err, db) {
         return new Promise(function (resolve, reject) {
             if (err) reject(err);
             //--------------------------------------
-
-            var array = db.collection('Ted').find({title: { $regex: ".*" + text + ".*", $options: "i" } }).limit(10).toArray();
+            
+            var array = db.collection('Ted').find({$or: [{title: {$regex: new RegExp(str, "i")}}, {main_speaker: {$regex: new RegExp(str1, "i")}}]}).toArray();
 
             //var array = db.collection('Ted').find({title: "/.*/b" + text + ".*/i" }).toArray();
-            console.log(array);
+            //console.log(array);
             // array = db.collection('Ted').find({main_speaker: { $regex: ".*" + text + ".*", $options: "i" }}).toArray();
             // console.log(array);
             // array = db.collection('Ted').find({tags: { $regex: ".*" + text + ".*", $options: "i" }}).limit(100).toArray();
