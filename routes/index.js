@@ -51,7 +51,7 @@ router.get('/test/submit', function (req, res, next) {
             //--------------------------------------
             if (arr.length == 0) {
 
-                res.render('theResult', { item: arr.length == 0 ,Text: text} );
+                res.render('theResult', { item1: arr.length == 0 ,Text: text} );
             }
             else {
                 res.render('theResult', { item: arr ,Text: text} );}

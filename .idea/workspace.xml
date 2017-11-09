@@ -4,7 +4,6 @@
     <list default="true" id="1a51841a-4ccb-4a55-88da-91683b2c1c87" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Document.hbs" afterPath="$PROJECT_DIR$/views/Document.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/theResult.hbs" afterPath="$PROJECT_DIR$/views/theResult.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,10 +21,10 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="48" column="26" lean-forward="true" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+            <state relative-caret-position="196">
+              <caret line="53" column="47" lean-forward="false" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
               <folding>
-                <marker date="1510247691000" expanded="true" signature="460:515" ph="{...}" />
+                <marker date="1510248452000" expanded="true" signature="460:515" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -54,8 +53,8 @@
       <file leaf-file-name="theResult.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/theResult.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="95">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -180,12 +179,12 @@
       <option name="presentableId" value="Default" />
       <updated>1509920076255</updated>
       <workItem from="1509920077610" duration="25367000" />
-      <workItem from="1510189183269" duration="7712000" />
+      <workItem from="1510189183269" duration="8368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33079000" />
+    <option name="totallyTimeSpent" value="33735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="23" width="1235" height="697" extended-state="0" />
@@ -226,7 +225,7 @@
         <state relative-caret-position="1470">
           <caret line="98" column="12" lean-forward="true" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
           <folding>
-            <marker date="1510247691000" expanded="true" signature="460:515" ph="{...}" />
+            <marker date="1510248452000" expanded="true" signature="460:515" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -279,14 +278,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/Document.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -295,20 +286,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="48" column="26" lean-forward="true" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        <state relative-caret-position="196">
+          <caret line="53" column="47" lean-forward="false" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
           <folding>
-            <marker date="1510247691000" expanded="true" signature="460:515" ph="{...}" />
+            <marker date="1510248452000" expanded="true" signature="460:515" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/theResult.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="95">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
