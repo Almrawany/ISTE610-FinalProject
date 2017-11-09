@@ -41,12 +41,20 @@ router.get('/test/submit', function (req, res, next) {
             // console.log(array);
             // array = db.collection('Ted').find({tags: { $regex: ".*" + text + ".*", $options: "i" }}).limit(100).toArray();
             // console.log(array);
+
             db.close();
             resolve(array);
             //--------------------------------------
         }).then(function (arr) {
+            console.log();
+            console.log(arr);
             //--------------------------------------
-            res.render('theResult', { item: arr ,Text: text} );
+            if (arr.length == 0) {
+
+                res.render('theResult', { item: arr.length == 0 ,Text: text} );
+            }
+            else {
+                res.render('theResult', { item: arr ,Text: text} );}
             //--------------------------------------
         });
     });
