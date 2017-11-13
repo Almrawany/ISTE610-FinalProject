@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a51841a-4ccb-4a55-88da-91683b2c1c87" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Document.hbs" afterPath="$PROJECT_DIR$/views/Document.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/theResult.hbs" afterPath="$PROJECT_DIR$/views/theResult.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -93,8 +89,8 @@
       <file leaf-file-name="Document.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/Document.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="96" column="6" lean-forward="true" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
+            <state relative-caret-position="378">
+              <caret line="104" column="29" lean-forward="false" selection-start-line="104" selection-start-column="29" selection-end-line="104" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#form#0;n#ul#0;n#div#0;n#nav#0;n#body#0;n#!!top" expanded="true" />
               </folding>
@@ -232,12 +228,12 @@
       <updated>1509920076255</updated>
       <workItem from="1509920077610" duration="25367000" />
       <workItem from="1510189183269" duration="8368000" />
-      <workItem from="1510293824332" duration="63643000" />
+      <workItem from="1510293824332" duration="63803000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97378000" />
+    <option name="totallyTimeSpent" value="97538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -517,8 +513,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/Document.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="96" column="6" lean-forward="true" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
+        <state relative-caret-position="378">
+          <caret line="104" column="29" lean-forward="false" selection-start-line="104" selection-start-column="29" selection-end-line="104" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#button#0;n#form#0;n#ul#0;n#div#0;n#nav#0;n#body#0;n#!!top" expanded="true" />
           </folding>
